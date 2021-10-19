@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Dental Implants",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Dental-Treatment.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Heart Specialist",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Health-Counseling.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Laboratory Tests",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Advanced-Lab.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Operation Theater",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Well-Trained-Staff.jpg"
+  },
+  {
+    "id": 5,
+    "name": "ICU Department",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Operation-Theater.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Medical Record",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Medical-Record.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Baby Care",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Kids-Treatment.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Eye Specialist",
+    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Skin-Counseling.jpg"
+  }
+]
