@@ -6,7 +6,7 @@ const ServiceDescription = () => {
   
   return (
     <div>
-      <h1>this is service description {serviceId}</h1>
+      <h1 className="text-center">service {serviceId} description</h1>
     </div>
   );
 };

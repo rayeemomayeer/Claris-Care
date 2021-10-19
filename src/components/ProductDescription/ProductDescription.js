@@ -1,9 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router';
 
 const ProductDescription = () => {
+  const {productId} = useParams();
   return (
     <div>
-      this is product description
+      <h1 className="text-center">Product {productId} Description</h1>
     </div>
   );
 };
