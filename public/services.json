@@ -1,42 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Dental Implants",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Dental-Treatment.jpg"
+    "serviceName": "Dental Implants",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Dental-Treatment.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 2,
-    "name": "Heart Specialist",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Health-Counseling.jpg"
+    "serviceName": "Heart Specialist",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Health-Counseling.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 3,
-    "name": "Laboratory Tests",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Advanced-Lab.jpg"
+    "serviceName": "Laboratory Tests",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Advanced-Lab.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 4,
-    "name": "Operation Theater",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Well-Trained-Staff.jpg"
+    "serviceName": "Operation Theater",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Well-Trained-Staff.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 5,
-    "name": "ICU Department",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Operation-Theater.jpg"
+    "serviceName": "ICU Department",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Operation-Theater.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 6,
-    "name": "Medical Record",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Medical-Record.jpg"
+    "serviceName": "Medical Record",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Medical-Record.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 7,
-    "name": "Baby Care",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Kids-Treatment.jpg"
+    "serviceName": "Baby Care",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Kids-Treatment.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   },
   {
     "id": 8,
-    "name": "Eye Specialist",
-    "img": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Skin-Counseling.jpg"
+    "serviceName": "Eye Specialist",
+    "serviceImg": "http://medicalguide.pearlthemes.com/wp-content/uploads/2019/03/Skin-Counseling.jpg",
+    "description": "lorem ipsum is a dummy text it's very boring text."
   }
 ]
