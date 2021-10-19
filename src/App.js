@@ -17,6 +17,10 @@ import Service from './components/Service/Service';
 import Doctors from './components/Doctors/Doctors';
 import Doctor from './components/Doctor/Doctor';
 import { useEffect, useState } from 'react';
+import AboutUs from './components/AboutUs/AboutUs';
+import Phermecy from './components/Phermecy/Phermecy';
+import Product from './components/Product/Product';
+import ProductDescription from './components/ProductDescription/ProductDescription';
 
 function App() {
   const [services, setServices] = useState([]);
@@ -31,6 +35,12 @@ function App() {
       .then(response => response.json())
       .then(data => setDoctors(data))
   },[]);
+  const [products, setProducts] = useState([]);
+  useEffect(()=> {
+    fetch('phermecy.json')
+      .then(result=>result.json())
+      .then(data=> setProducts(data))
+  }, []);
   return (
     <div className="">
       <AuthProvider>
@@ -64,9 +74,26 @@ function App() {
              <div className="text-center">
               <Link to="/doctors"><button className="btn btn-outline-success">see all doctors</button></Link>
             </div>
+            <div>
+      <div className="bg-white">
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 className="sr-only">Products</h2>
+
+        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+          {products.map((product) => (
+            <Product key={product.id} product={product}></Product>
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
+            <AboutUs></AboutUs>
           </Route>
           <Route path="/services">
             <Services></Services>
+          </Route>
+          <Route path="/phermecy">
+            <Phermecy></Phermecy>
           </Route>
           <Route path="/doctors">
             <Doctors></Doctors>
@@ -76,6 +103,9 @@ function App() {
           </Route>
           <PrivateRoute path="/service/:serviceId">
             <ServiceDescription></ServiceDescription>
+          </PrivateRoute>
+          <PrivateRoute path="/phermacy/:productId">
+            <ProductDescription></ProductDescription>
           </PrivateRoute>
           <Route path="*">
             

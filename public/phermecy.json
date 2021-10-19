@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Cetirizine 45mg Film-coated Tablets",
+    "price": "$48",
+    "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/product11-fetaured.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ibuprofen 500mg Capsule",
+    "price": "$68",
+    "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/product13-fetaured.jpg"
+  },
+  {
+    "id": 3,
+    "name": "EllaOne Film-Coated tablet Contraception",
+    "price": "$49",
+    "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/product5-fetaured.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tablet 100 PLUS Kapsul 220MG A30",
+    "price": "$28",
+    "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/product1-fetaured.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cetirizine 25mg Film-coated Tablets",
+    "price": "$32",
+    "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/product4-fetaured.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Hand Creams for Dry, Sensitive Skin",
+    "price": "$45",
+    "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/h1-product2-featured.jpg"
+  }
+]

@@ -21,10 +21,9 @@ const Footer = () => {
       <div className="footer-right-side">
         <h2 style={{color: 'DarkBlue'}}>Quick links</h2>
         <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/home">Home</Link><br/><br/>
-        <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/classes">Classes</Link><br/><br/>
         <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/services">Services</Link><br/><br/>
-        <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/teachers">Teachers</Link><br/><br/>
-        <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/about">About us</Link><br/><br/>
+        <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/doctors">Doctors</Link><br/><br/>
+        <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/phermecy">Phermecy</Link><br/><br/>
       </div>
       </div>
       <p style={{textAlign: 'center'}}>&copy; Copyrights 2021 Speaker's Counsils All rights reserved</p>
