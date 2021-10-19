@@ -1,0 +1,14 @@
+.teachers-container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 15px;
+  margin: 40px;
+  text-align: center;
+  
+}
+@media only screen and (max-width: 768px) {
+  .teachers-container{
+    margin-bottom: 100px;
+    grid-template-columns: repeat(1,1fr);
+  }
+}

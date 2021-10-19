@@ -14,6 +14,8 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Footer from './components/Footer/Footer';
 import Service from './components/Service/Service';
+import Doctors from './components/Doctors/Doctors';
+import Doctor from './components/Doctor/Doctor';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -23,6 +25,12 @@ function App() {
       .then(result=>result.json())
       .then(data=> setServices(data))
   }, []);
+  const [doctors, setDoctors] = useState([]);
+  useEffect(()=>{
+    fetch('doctors.json')
+      .then(response => response.json())
+      .then(data => setDoctors(data))
+  },[]);
   return (
     <div className="">
       <AuthProvider>
@@ -43,11 +51,25 @@ function App() {
               </div>
             </div>
             <div className="text-center">
-              <Link to="/services"><button className="btn btn-success">see all services</button></Link>
+              <Link to="/services"><button className="btn btn-outline-success">see all services</button></Link>
+            </div>
+            <div className="text-center">
+              <h1 className="text-5xl text-center mb-8 text-green-900 mt-24">Our Doctors</h1>
+              <div className="teachers-container">
+                      {
+                        doctors.slice(0,5).map(cls => <Doctor key={cls.id} cls={cls}></Doctor>)
+                      }
+              </div>
+            </div>
+             <div className="text-center">
+              <Link to="/doctors"><button className="btn btn-outline-success">see all doctors</button></Link>
             </div>
           </Route>
           <Route path="/services">
             <Services></Services>
+          </Route>
+          <Route path="/doctors">
+            <Doctors></Doctors>
           </Route>
           <Route path="/login">
             <Login></Login>

@@ -10,6 +10,7 @@ const Navbar = () => {
       <div className="">
         <NavLink className="px-2 text-2xl font-medium no-underline text-white" to="/home">Home</NavLink>
         <NavLink className="px-2 text-2xl font-medium no-underline text-white" to="/services">Services</NavLink>
+        <NavLink className="px-2 text-2xl font-medium no-underline text-white" to="/doctors">Doctors</NavLink>
         {
           user?.email?
             <button className="no-underline font-medium text-xl rounded-3xl bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 mx-2" onClick={logOut}>Logout</button>:
