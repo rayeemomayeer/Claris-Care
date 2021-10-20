@@ -1,7 +1,9 @@
 .footer-container {
   margin-top: 100px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 0px;
 }
 .footer-right-side ul {
   list-style: none;

@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-green-100">
       <div className="footer-container">
         <div className="footer-left-side">
         <h2 style={{color: 'DarkBlue'}}>Contact us</h2>
@@ -26,7 +26,7 @@ const Footer = () => {
         <Link style={{textDecoration: 'none',color: 'DodgerBlue'}} to="/phermecy">Phermecy</Link><br/><br/>
       </div>
       </div>
-      <p style={{textAlign: 'center'}}>&copy; Copyrights 2021 Speaker's Counsils All rights reserved</p>
+      <p style={{textAlign: 'center'}}>&copy; Copyrights 2021 Claris Care All rights reserved</p>
     </footer>
   );
 };

@@ -17,12 +17,11 @@ import Service from './components/Service/Service';
 import Doctors from './components/Doctors/Doctors';
 import Doctor from './components/Doctor/Doctor';
 import { useEffect, useState } from 'react';
-import AboutUs from './components/AboutUs/AboutUs';
 import Phermecy from './components/Phermecy/Phermecy';
 import Product from './components/Product/Product';
 import ProductDescription from './components/ProductDescription/ProductDescription';
 import NotFound from './components/NotFound/NotFound';
-import Blogs from './components/Blogs/Blogs';
+import About from './components/About/About';
 
 function App() {
   const [services, setServices] = useState([]);
@@ -51,6 +50,45 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home></Home>
+            <div className="max-w-2xl mx-auto py-4 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+              <h1 className="text-5xl text-center mb-8 text-green-900">Our Services</h1>
+              <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                {
+                  services.slice(0,4).map(service=> <Service key={service.id} service={service}></Service>)
+                }
+              </div>
+            </div>
+            <div className="text-center">
+              <Link to="/services"><button className="btn btn-outline-success">see all services</button></Link>
+            </div>
+            <div className="text-center">
+              <h1 className="text-5xl text-center mb-8 text-green-900 mt-24">Docter’s In The Medical Sciences</h1>
+              <div className="teachers-container">
+                      {
+                        doctors.slice(0,5).map(cls => <Doctor key={cls.id} cls={cls}></Doctor>)
+                      }
+              </div>
+            </div>
+             <div className="text-center">
+              <Link to="/doctors"><button className="btn btn-outline-success">see all doctors</button></Link>
+            </div>
+            <div>
+      <div className="bg-white">
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1 className="text-5xl text-center mb-8 text-green-900">Pharmacy</h1>
+
+        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          {products.slice(0,8).map((product) => (
+            <Product key={product.id} product={product}></Product>
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
+    <div className="text-center">
+              <Link to="/phermecy"><button className="btn btn-outline-success">see all products</button></Link>
+            </div>
+            <About></About>
           </Route>
           <Route path="/home">
             <Home></Home>
@@ -92,7 +130,7 @@ function App() {
     <div className="text-center">
               <Link to="/phermecy"><button className="btn btn-outline-success">see all products</button></Link>
             </div>
-            <AboutUs></AboutUs>
+            <About></About>
           </Route>
           <Route path="/services">
             <Services></Services>
@@ -103,9 +141,7 @@ function App() {
           <Route path="/doctors">
             <Doctors></Doctors>
           </Route>
-          <Route path="/blogs">
-            <Blogs></Blogs>
-          </Route>
+          
           <Route path="/login">
             <Login></Login>
           </Route>

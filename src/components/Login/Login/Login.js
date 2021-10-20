@@ -5,7 +5,7 @@ const Login = () => {
   const {signInUsingGoogle,handleRegistration,handleEmailChange,handlePasswordChange,error,tooggleLogin,isLogin,handleResetPassword,handleNameChange} = useAuth();
   return (
     <div className="text-center">
-      <form onSubmit={handleRegistration}>
+      <form onSubmit={handleRegistration} autoComplete="off">
         <h1 className="text-5xl text-center mb-8 text-green-900 mt-8">{isLogin? 'Sign In' : 'Sign Up'}</h1>
         
         {!isLogin && <div><label htmlFor="email" className="text-3xl text-indigo-700">Name</label><br /><input required onBlur={handleNameChange} className="border-2 border-gray-400 rounded p-2 sm:w-full md:w-5/12" placeholder="jhon smith" type="name" /><br/><br/></div>}

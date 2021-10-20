@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
           <div>
           <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/phermecy">Phermecy</NavLink>
-            <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/blogs">blogs</NavLink>
+            
           </div>
       </div>
       <div className="flex align-middle">
