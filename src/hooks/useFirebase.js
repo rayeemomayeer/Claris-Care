@@ -39,6 +39,7 @@ const useFirebase = () => {
   }
   //handle registration
   const handleRegistration = (e) => {
+    alert("Verify Your Email");
     e.preventDefault();
     if(!/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/.test(password)){
       setError('Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character');
@@ -73,8 +74,10 @@ const useFirebase = () => {
   }
   //reset password
   const handleResetPassword = () => {
+    alert("Check Your Email");
     sendPasswordResetEmail(auth, email)
-      .then(result => {})
+      .then(result => {
+      })
   }
   //toggle login
   const tooggleLogin = e => {
