@@ -1,11 +1,12 @@
 
-import { getAuth, signInWithPopup, GoogleAuthProvider,signOut,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail  } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,signOut,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail,updateProfile  } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../components/Login/Firebase/firebase.init";
 
 initializeAuthentication();
 
 const useFirebase = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [user, setUser] = useState({});
@@ -22,11 +23,19 @@ const useFirebase = () => {
     .then((result) => {setUser(result.user)}).finally(()=>setIsLoading(false));
   }
   //handle input feild change
+  const handleNameChange = e => {
+    setName(e.target.value);
+  }
   const handleEmailChange = e => {
     setEmail(e.target.value)
   }
   const handlePasswordChange = e => {
     setPassword(e.target.value)
+  }
+  const setUserName = () => {
+    updateProfile(auth.currentUser, {
+      displayName: name, photoURL: "https://i1.wp.com/researchictafrica.net/wp/wp-content/uploads/2016/10/default-profile-pic.jpg?ssl=1"
+    }).then(result=> {})
   }
   //handle registration
   const handleRegistration = (e) => {
@@ -51,6 +60,7 @@ const useFirebase = () => {
         setUser(result.user);
         setError('')
         veifyEmail();
+        setUserName();
       })
       .catch(error=>{setError(error.message)})
     }
@@ -76,7 +86,7 @@ const useFirebase = () => {
     signOut(auth)
       .then(() => {setUser({})}).finally(()=>setIsLoading(false));
   }
-
+  console.log(user)
   useEffect(()=> {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -101,7 +111,8 @@ const useFirebase = () => {
     error,
     tooggleLogin,
     isLogin,
-    handleResetPassword
+    handleResetPassword,
+    handleNameChange
   }
 }
 

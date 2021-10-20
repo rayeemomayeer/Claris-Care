@@ -2,15 +2,20 @@ import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-  const {signInUsingGoogle,handleRegistration,handleEmailChange,handlePasswordChange,error,tooggleLogin,isLogin,handleResetPassword} = useAuth();
+  const {signInUsingGoogle,handleRegistration,handleEmailChange,handlePasswordChange,error,tooggleLogin,isLogin,handleResetPassword,handleNameChange} = useAuth();
   return (
     <div className="text-center">
       <form onSubmit={handleRegistration} autoComplete="on">
         <h1>Please {isLogin? 'Login' : 'Register'}</h1>
+        
+        {!isLogin && <div><label htmlFor="email">Name</label><br /><input required onBlur={handleNameChange} className="border-2 border-gray-400 rounded p-2 w-5/12" placeholder="jhon smith" type="name" /><br/><br/></div>}
+
         <label htmlFor="email">Email</label><br />
         <input required onBlur={handleEmailChange} className="border-2 border-gray-400 rounded p-2 w-5/12" placeholder="jhon@gmail.com" type="email" /><br/><br/>
+
         <label htmlFor="email">password</label><br />
         <input required onBlur={handlePasswordChange} className="border-2 border-gray-400 rounded p-2 w-5/12" type="password" placeholder="zHi*71iD"/><br/><br />
+
         <div><p className="text-red-500">{error}</p></div><br/>
         <div>
           <input onChange={tooggleLogin} type="checkbox" className="form-check-input" id="gridCheck1" />
