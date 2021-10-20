@@ -22,6 +22,7 @@ import Product from './components/Product/Product';
 import ProductDescription from './components/ProductDescription/ProductDescription';
 import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
+import Contract from './components/Contract/Contract';
 
 function App() {
   const [services, setServices] = useState([]);
@@ -132,18 +133,21 @@ function App() {
             </div>
             <About></About>
           </Route>
-          <Route path="/services">
+          <PrivateRoute path="/services">
             <Services></Services>
-          </Route>
-          <Route path="/phermecy">
+          </PrivateRoute>
+          <PrivateRoute path="/phermecy">
             <Phermecy></Phermecy>
-          </Route>
+          </PrivateRoute>
           <Route path="/doctors">
             <Doctors></Doctors>
           </Route>
           <Route path="/login">
             <Login></Login>
           </Route>
+          <PrivateRoute path="/contract">
+            <Contract></Contract>
+          </PrivateRoute>
           <PrivateRoute path="/service/:serviceId">
             <ServiceDescription></ServiceDescription>
           </PrivateRoute>
