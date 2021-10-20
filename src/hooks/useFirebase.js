@@ -89,7 +89,6 @@ const useFirebase = () => {
     signOut(auth)
       .then(() => {setUser({})}).finally(()=>setIsLoading(false));
   }
-  console.log(user)
   useEffect(()=> {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
