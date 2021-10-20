@@ -141,7 +141,6 @@ function App() {
           <Route path="/doctors">
             <Doctors></Doctors>
           </Route>
-          
           <Route path="/login">
             <Login></Login>
           </Route>
