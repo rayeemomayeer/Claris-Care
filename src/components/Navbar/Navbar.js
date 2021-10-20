@@ -7,12 +7,16 @@ const Navbar = () => {
   return (
     <nav className="p-2 align-center navbar" style={{backgroundColor: '#00E1CE'}}>
       <h1 className="text-green-900 sm:text-lg md:text-4xl font-bold">Claris Care</h1>
-      <div className="navbar-links">
-        <NavLink activeStyle={{fontWeight: "bold"}} className="px-2 text-2xl font-medium no-underline text-white" to="/home">Home</NavLink>
-        <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/services">Services</NavLink>
-        <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/doctors">Doctors</NavLink>
-        <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/phermecy">Phermecy</NavLink>
-        <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/blogs">Blogs</NavLink>
+      <div className="">
+          <div>
+            <NavLink activeStyle={{fontWeight: "bold"}} className="px-2 text-2xl font-medium no-underline text-white" to="/home">Home</NavLink>
+          <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/services">Services</NavLink>
+          <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/doctors">Doctors</NavLink>
+          </div>
+          <div>
+          <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/phermecy">Phermecy</NavLink>
+            <NavLink activeStyle={{fontWeight: "bold"}}  className="px-2 text-2xl font-medium no-underline text-white" to="/blogs">blogs</NavLink>
+          </div>
       </div>
       <div className="flex align-middle">
         <h5 className="text-gray-700 my-auto">{user?.displayName}</h5>
