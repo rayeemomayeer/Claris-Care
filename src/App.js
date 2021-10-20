@@ -26,19 +26,19 @@ import About from './components/About/About';
 function App() {
   const [services, setServices] = useState([]);
   useEffect(()=> {
-    fetch('services.json')
+    fetch('/services.json')
       .then(result=>result.json())
       .then(data=> setServices(data))
   }, []);
   const [doctors, setDoctors] = useState([]);
   useEffect(()=>{
-    fetch('doctors.json')
+    fetch('/doctors.json')
       .then(response => response.json())
       .then(data => setDoctors(data))
   },[]);
   const [products, setProducts] = useState([]);
   useEffect(()=> {
-    fetch('phermecy.json')
+    fetch('/phermecy.json')
       .then(result=>result.json())
       .then(data=> setProducts(data))
   }, []);
