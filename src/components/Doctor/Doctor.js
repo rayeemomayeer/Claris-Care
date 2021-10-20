@@ -11,7 +11,7 @@ const Teacher = (props) => {
           <Card.Img variant="top" src={teacherImg} />
         </div>
         <Card.Body style={{padding: '10px'}}>
-          <Card.Title><h4 style={{color:'DarkSlateGray'}} className="">{teacherTitle}</h4></Card.Title>
+          <Card.Title><h4 style={{color:'#013243',fontFamily: 'Ubuntu'}} className="text-start font-semibold">{teacherTitle}</h4></Card.Title>
         </Card.Body>
       </Card>
     </div>

@@ -11,7 +11,7 @@ const Teachers = () => {
   },[])
   return (
     <div className="text-center">
-      <h1 className="text-5xl text-center mb-8 text-green-900 mt-8">Our Doctors</h1>
+      <h1 className="text-5xl text-center mb-8 text-green-900 mt-8">Docter’s In The Medical Sciences</h1>
       <div className="teachers-container">
               {
                 doctors.map(cls => <Doctor key={cls.id} cls={cls}></Doctor>)

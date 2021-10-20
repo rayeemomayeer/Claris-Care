@@ -34,5 +34,65 @@
     "name": "Hand Creams for Dry, Sensitive Skin",
     "price": "$45",
     "imageSrc": "https://pharmacare.qodeinteractive.com/wp-content/uploads/2021/02/h1-product2-featured.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Bladder Control Pads",
+    "price": "$190",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-38.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Albunorm",
+    "price": "$44",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-16.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Adant Meiji",
+    "price": "$20",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-01.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Chemotherapy Isolation",
+    "price": "$20",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-48.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Coveram Tab.5/10",
+    "price": "$65",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-25.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Cumar Gold Fast",
+    "price": "$17",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-33.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Demoferidon",
+    "price": "$45",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-24.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Deodorizing Nabifar",
+    "price": "$169",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-40.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Doctor Gout Box.12",
+    "price": "$89",
+    "imageSrc": "https://elementor-10aba.kxcdn.com/diza/wp-content/uploads/2020/06/product-30.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Gabarica 400",
+    "price": "$50",
+    "imageSrc": "https://elementor.thembay.com/diza/wp-content/uploads/2020/06/product-23.jpg"
   }
 ]
